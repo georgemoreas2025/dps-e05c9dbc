@@ -6,7 +6,7 @@ button{background:#e3b341;color:#1a1405;border:0;border-radius:8px;padding:11px;
 .bar{height:3px;background:#30363d;border-radius:2px;overflow:hidden}.bar i{display:block;height:100%;width:0;background:#e3b341;transition:width .2s}</style></head>
 <body><form id="f"><h1>Dolman Preview Studio</h1><p>Private review build. Enter the passphrase you were given.</p><input id="pw" type="password" autocomplete="current-password" placeholder="passphrase" aria-label="Passphrase" autofocus><button type="submit">Open</button><div class="bar" title="Downloading the studio"><i id="b"></i></div><p class="err" id="e" role="alert"></p></form>
 <script>
-const D={s:"gfuQRnliuuLkn3Tbx9//0A==",n:310000,u:"m/studio.bin",p:{"bf": "m/bf.bin", "bffal": "m/bffal.bin", "bflln": "m/bflln.bin", "hero": "m/hero.bin", "pages-dolman": "m/pages-dolman.bin", "pages-fal": "m/pages-fal.bin", "pages-lln": "m/pages-lln.bin"}};
+const D={s:"DhvpxoqOaaNJnAA9efwh8Q==",n:310000,u:"m/studio.bin",p:{"bf": "m/bf.bin", "bffal": "m/bffal.bin", "bflln": "m/bflln.bin", "hero": "m/hero.bin", "pages-dolman": "m/pages-dolman.bin", "pages-fal": "m/pages-fal.bin", "pages-lln": "m/pages-lln.bin"}};
 const u=b=>Uint8Array.from(atob(b),c=>c.charCodeAt(0)),E=document.getElementById('e'),B=document.getElementById('b');
 let got=null;
 const bar=f=>{B.style.width=Math.round(f*100)+'%';};
