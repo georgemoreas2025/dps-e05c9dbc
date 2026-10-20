@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Dolman Preview Studio</title><link rel="icon" href="data:,">
+<style>:root{color-scheme:dark}body{margin:0;min-height:100vh;display:grid;place-items:center;background:#0d1117;color:#9da7b3;font:14px/1.5 ui-monospace,Consolas,monospace}a{color:#e3b341}</style></head>
+<body><p id="m">Opening the newest version of the Dolman Preview Studio…</p>
+<script>
+(async()=>{const h=(location.hash||'').replace(/[#&]?k=[^&]*&?/,'#').replace(/#$/,'');
+for(let i=0;i<3;i++){try{const r=await fetch('https://raw.githubusercontent.com/georgemoreas2025/dps-e05c9dbc/main/latest.json?t='+Date.now(),{cache:'no-store'});if(r.ok){const L=await r.json();if(L&&L.url){location.replace(L.url+h);return;}}}catch(e){}await new Promise(r=>setTimeout(r,800));}
+document.getElementById('m').innerHTML='Could not reach the newest version. <a href="">Try again</a>.';})();
+</script></body></html>
