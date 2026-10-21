@@ -5,7 +5,7 @@ h1{margin:0;font:800 20px system-ui,sans-serif}p{margin:0;color:#9da7b3;font-siz
 .bar{height:3px;background:#30363d;border-radius:2px;overflow:hidden}.bar i{display:block;height:100%;width:0;background:#e3b341;transition:width .2s}</style></head>
 <body><div class="box"><h1>Dolman Preview Studio</h1><p id="m">Opening the studio…</p><div class="bar" title="Downloading the studio"><i id="b"></i></div><p class="err" id="e" role="alert"></p></div>
 <script>
-const D={k:"19ZDEYPfyFV5dwHtYtCPXgEjGgCYeXjr8m1A3XGQrs4=",b:"20261021-003105-1df317",u:"m/studio.bin",p:{"bf": "m/bf.bin", "bffal": "m/bffal.bin", "bflln": "m/bflln.bin", "hero": "m/hero.bin", "pages-dolman": "m/pages-dolman.bin", "pages-fal": "m/pages-fal.bin", "pages-lln": "m/pages-lln.bin"},latest:"https://raw.githubusercontent.com/georgemoreas2025/dps-e05c9dbc/main/latest.json"};
+const D={k:"FCE1ITPJRZre1dLqE04OdWDsDIUs5dNJ9xKKUb8lVoA=",b:"20261021-155613-2a1089",u:"m/studio.bin",p:{"bf": "m/bf.bin", "bffal": "m/bffal.bin", "bflln": "m/bflln.bin", "hero": "m/hero.bin", "pages-dolman": "m/pages-dolman.bin", "pages-fal": "m/pages-fal.bin", "pages-lln": "m/pages-lln.bin"},latest:"https://raw.githubusercontent.com/georgemoreas2025/dps-e05c9dbc/main/latest.json"};
 const u=b=>Uint8Array.from(atob(b),c=>c.charCodeAt(0)),E=document.getElementById('e'),B=document.getElementById('b'),M=document.getElementById('m');
 const bar=f=>{B.style.width=Math.round(f*100)+'%';};
 let got=null,opened=false,forwarded=false;
